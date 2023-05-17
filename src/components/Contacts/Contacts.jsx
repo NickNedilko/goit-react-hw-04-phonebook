@@ -6,7 +6,7 @@ import { RiDeleteBin6Line } from 'react-icons/ri';
 const Contacts = ({ contacts, onDeleteContact }) => {
   return (
     <ul className={css.contactsList}>
-      {contacts.map(({ name, id, number }) => {
+      {contacts?.map(({ name, id, number }) => {
         return (
           <li key={id} className={css.item}>
             <span>
